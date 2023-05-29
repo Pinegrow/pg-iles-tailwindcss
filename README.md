@@ -37,7 +37,13 @@ Open your project in Vue Designer, and follow the instructions displayed in the 
 ### Start your development server
 
 ```bash
-npm run dev
+npm run dev # SPA during development
+```
+
+### Preview
+
+```bash
+npm run now # build & preview
 ```
 
 ### Build
@@ -89,7 +95,7 @@ Check out the [deployment documentation](https://iles.pages.dev/guide/deployment
 ### Devtools
 
 - [îles Devtools](https://iles.pages.dev/guide/development#devtools) - Page information is available in the in-app debug panel (similar to Vitepress). Also access the "Islands" inspector in Vue devtools.
-- [Vue Devtools](https://devtools.vuejs.org/guide/installation.html#standalone) - Official devtools that can be used as a standalone app alongside Vue Designer. It's conditionally configured in app.ts (only during development).
+- [Vue Devtools](https://devtools.vuejs.org/guide/installation.html#standalone) - Official devtools that can be used as a standalone app alongside Vue Designer. It's conditionally configured in `app.ts` (only during development).
   - **ACTION REQUIRED**: Currently deactivated. In `app.ts`, uncomment the top devtools related snippet to activate.
 
 ### VS Code Extensions

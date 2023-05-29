@@ -37,7 +37,13 @@ Open your project in Vue Designer, and follow the instructions displayed in the 
 ### Start your development server
 
 ```bash
-npm run dev
+npm run dev # SPA during development
+```
+
+### Preview
+
+```bash
+npm run now # build & preview
 ```
 
 ### Build

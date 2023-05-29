@@ -35,7 +35,7 @@
             <ul class="text-center lg:mt-2 lg:text-left">
               <li class="mb-4">
                 <BaseButton
-                  href="https://pinegrow.com/docs/vue-designer"
+                  to="https://pinegrow.com/docs/vue-designer"
                   external
                   target="_blank"
                   variant="link"
@@ -46,7 +46,7 @@
               </li>
               <li class="mb-4">
                 <BaseButton
-                  href="https://www.youtube.com/@pinegrow/videos"
+                  to="https://www.youtube.com/@pinegrow/videos"
                   external
                   target="_blank"
                   variant="link"
@@ -57,7 +57,7 @@
               </li>
               <li class="mb-4">
                 <BaseButton
-                  href="https://pinegrow.com/support"
+                  to="https://pinegrow.com/support"
                   external
                   target="_blank"
                   variant="link"
@@ -74,7 +74,7 @@
             <ul class="text-center lg:mt-2 lg:text-left">
               <li class="mb-4">
                 <BaseButton
-                  href="https://pinegrow.com/vue-designer"
+                  to="https://pinegrow.com/vue-designer"
                   external
                   target="_blank"
                   variant="link"
@@ -85,7 +85,7 @@
               </li>
               <li class="mb-4">
                 <BaseButton
-                  href="https://pinegrow.com/vue-designer"
+                  to="https://pinegrow.com/vue-designer"
                   external
                   target="_blank"
                   variant="link"
@@ -96,7 +96,7 @@
               </li>
               <li class="mb-4">
                 <BaseButton
-                  href="https://pinegrow.com/release_notes/"
+                  to="https://pinegrow.com/release_notes/"
                   external
                   target="_blank"
                   variant="link"

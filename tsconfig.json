@@ -17,7 +17,7 @@
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "skipLibCheck": true,
-    "strict": false,
-    "allowJs": true
+    "allowJs": true,
+    "strict": false
   }
 }

@@ -220,8 +220,8 @@
       aria-hidden="true"
       height="24px"
     />
-    <slot>
-      <span
+    <slot
+      ><span
         v-if="label"
         :class="[truncate ? 'text-left break-all line-clamp-1' : '']"
       >
