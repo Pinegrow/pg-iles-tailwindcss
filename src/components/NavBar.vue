@@ -24,18 +24,18 @@
             <NavBarDesktopTabs
               :navlinks="desktopNavTabs"
               :current-path="currentPath"
-              class="h-full"
-              client:media="screen and (min-width: 768px)"
+              class="hidden sm:flex sm:ml-6"
+              client:media="screen and (min-width: 640px)"
             />
           </div>
           <DarkModeSwitch client:load />
           <div class="-mr-2 items-center relative">
             <NavBarMobileMenuButton v-if="mobileNavTabs.length" client:load />
             <NavBarMobileMenu
-              class="hidden sm:block absolute right-0 mt-4"
+              class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
               :navlinks="mobileNavTabs"
               :current-path="currentPath"
-              client:media="screen and (min-width: 768px)"
+              client:media="screen and (min-width: 640px)"
             />
           </div>
         </div>
@@ -44,7 +44,7 @@
         class="sm:hidden"
         :navlinks="navlinks"
         :current-path="currentPath"
-        client:media="screen and (max-width: 768px)"
+        client:media="screen and (max-width: 640px)"
       />
     </nav>
   </div>

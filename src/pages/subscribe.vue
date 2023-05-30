@@ -32,9 +32,9 @@
                 />
                 <BaseButton
                   type="submit"
-                  class="ml-2 pg-primary-container-text"
+                  class="ml-2"
                   size="md"
-                  color="gray"
+                  color="secondary"
                 >
                   Sign Up
                 </BaseButton>
