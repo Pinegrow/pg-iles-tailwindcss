@@ -167,7 +167,7 @@ Inspired by Material Design https://m3.material.io/styles/color/the-color-system
 }
 
 .poster:before {
-  background-image: url(https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE0N3x8d2FsbHBhcGVyfGVufDB8fHx8MTY4Mzg5ODAxNHww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max) !important;
+  background-image: url(https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=1080) !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body.poster:before {
   (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 992px) and (min-resolution: 192dpi) {
   .poster:before {
-    background-image: url(https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE0N3x8d2FsbHBhcGVyfGVufDB8fHx8MTY4Mzg5ODAxNHww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max) !important;
+    background-image: url(https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=2000) !important;
   }
 }
 body,
