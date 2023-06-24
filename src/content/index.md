@@ -2,6 +2,8 @@
 
 This is a starter template that pre-includes the [Pinegrow îles Module](https://www.npmjs.com/package/@pinegrow/iles-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
+Demo - https://pg-iles-tailwindcss.netlify.app/
+
 ## Vue Designer
 
 A desktop visual editor for Vue apps supporting Mac, Windows, and Linux by [Pinegrow](https://pinegrow.com/). Take it for a free trial at [Vue Designer](https://pinegrow.com/vue-designer)!
@@ -129,4 +131,4 @@ This project allows JS, and strict mode is turned off. Update `tsconfig.ts` as r
 
 ## Community
 
-- [Pinegrow Vue Designer](https://forum.pinegrow.com/c/vue-designer)
+- [Vue Designer Community](https://forum.pinegrow.com/c/vue-designer)
