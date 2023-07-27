@@ -9,6 +9,8 @@ import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 export default defineConfig({
   siteUrl: 'https://pg-iles-tailwindcss.netlify.app',
   turbo: true,
+  jsx: 'preact', // 'solid', 'react', 'vue'
+  svelte: true,
   modules: [
     // 'prismjs/themes/prism-tomorrow.css' via app.ts
     '@islands/prism',
