@@ -22,7 +22,9 @@
   import { Post } from '~/composables/posts'
 
   const props = defineProps<{ slug?: string }>()
-  const post: Post = getPost(props.slug)
+  const post = computed((): Post => {
+    return getPost(props.slug)
+  })
 </script>
 
 <template layout="post">

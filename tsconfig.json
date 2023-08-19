@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -10,6 +9,8 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
       "~/*": ["src/*"],
@@ -19,7 +20,7 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "skipLibCheck": true,
     "allowJs": true,
-    "strict": false,
-    "include": ["components.d.ts", "auto-imports.d.ts"]
-  }
+    "strict": false
+  },
+  "exclude": ["**/node_modules/**", "**/dist/**"]
 }

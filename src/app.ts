@@ -12,12 +12,18 @@ import { defineApp } from 'iles'
 import 'uno.css'
 import '@/assets/css/tailwind.css'
 import 'prismjs/themes/prism-tomorrow.css'
+
 import { computed } from 'vue'
+import pinia from '@/plugins/pinia'
+
 import { checkDarkTheme } from '~/composables/dark-color-scheme-check'
 import type { Script } from '@unhead/schema'
 type TurboScript = Script & { once: true }
 
 export default defineApp({
+  enhanceApp({ app }) {
+    app.use(pinia)
+  },
   head({ frontmatter, site }) {
     return {
       htmlAttrs: { lang: 'en-US' },
