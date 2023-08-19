@@ -6,6 +6,7 @@ import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
 import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
+import myIlesModule from './src/modules/my-module'
 
 export default defineConfig({
   siteUrl: 'https://pg-iles-tailwindcss.netlify.app',
@@ -13,6 +14,7 @@ export default defineConfig({
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
   modules: [
+    myIlesModule,
     // 'prismjs/themes/prism-tomorrow.css' via app.ts
     '@islands/prism',
     [
