@@ -21,7 +21,7 @@
                 <h5 class="font-extrabold mb-0 ml-2">Vue Designer</h5>
               </a>
             </div>
-            <NavBarDesktopTabs
+            <NavBarDesktopMenu
               :navlinks="desktopNavTabs"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
