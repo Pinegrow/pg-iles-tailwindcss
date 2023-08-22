@@ -3,7 +3,7 @@
 </page>
 
 <script lang="ts">
-  import { getPost, getPosts } from '~/composables/posts'
+  import { getPost, getPosts } from '@/composables/posts'
   export default definePageComponent({
     async getStaticPaths() {
       const posts = getPosts()
@@ -19,7 +19,7 @@
 </script>
 
 <script setup lang="ts">
-  import { Post } from '~/composables/posts'
+  import { Post } from '@/composables/posts'
 
   const props = defineProps<{ slug?: string }>()
   const post = computed((): Post => {
