@@ -3,9 +3,9 @@
 </page>
 <template>
   <main>
-    <HeroSection client:load />
-    <AboutTemplate client:visible />
-    <WalkThrough client:visible />
+    <HeroSection />
+    <AboutTemplate />
+    <WalkThrough />
   </main>
 </template>
 <style scoped></style>
