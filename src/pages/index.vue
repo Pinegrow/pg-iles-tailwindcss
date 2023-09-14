@@ -2,6 +2,6 @@
     title: Home
 </page>
 <template>
-  <main>A Fresh Start!</main>
+  <main><span>A Fresh Start!</span></main>
 </template>
 <style scoped></style>
