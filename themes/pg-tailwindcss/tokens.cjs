@@ -216,6 +216,10 @@ const pg_fonts = {
   serif: ["'Kalam', sans-serif"],
 }
 
+const pg_font_urls = [
+  'https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Kalam:300,400,700&display=swap',
+]
+
 const pg_backgrounds = {
   'design-image':
     "url('https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=1080')",
@@ -232,5 +236,6 @@ const pg_backgrounds = {
 module.exports = {
   pg_colors,
   pg_fonts,
+  pg_font_urls,
   pg_backgrounds,
 }
