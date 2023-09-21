@@ -27,6 +27,9 @@ export default defineConfig({
           tailwindcss: {
             configPath: 'tailwind.config.ts',
             cssPath: '@/assets/css/tailwind.css',
+            // themePath: false, // Set to false so that Design Panel is not used
+            // restartOnConfigUpdate: true,
+            // restartOnThemeUpdate: true,
           },
           // plugins: [
           //   {
@@ -104,11 +107,11 @@ export default defineConfig({
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
       AutoImportAPIs({
         include: [
-          /.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-          /.vue$/,
-          /.vue?vue/, // .vue
-          /.md$/, // .md
-          /.mdx$/, // .mdx
+          /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+          /\.vue$/,
+          /\.vue\?vue/, // .vue
+          /\.md$/, // .md
+          /\.mdx$/, // .mdx
         ],
         imports: [
           'vue',
