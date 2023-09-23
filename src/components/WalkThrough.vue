@@ -1,5 +1,9 @@
-<script setup lang="ts">
+<script client:load lang="ts">
+  //Move to WalkThrough.vue
   import '@/plugins/youtube.client'
+</script>
+
+<script setup lang="ts">
   import vueDesignerLogo from '@/assets/images/vue-designer.svg'
   const showTitle = ref(true)
 </script>
