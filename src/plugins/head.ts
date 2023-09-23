@@ -29,10 +29,16 @@ if (pg_font_urls.length) {
       onload: "this.onload=null;this.rel='stylesheet'",
       href: pg_font_urls.toString(),
     },
+    {
+      rel: 'stylesheet',
+      as: 'style',
+      crossorigin: 'anonymous',
+      href: pg_font_urls.toString(),
+    },
   )
-  noscript.push(
-    `<link rel="stylesheet" crossorigin="anonymous" href="${pg_font_urls.toString()}" />`,
-  )
+  // noscript.push(
+  //   `<link rel="stylesheet" crossorigin="anonymous" href="${pg_font_urls.toString()}" />`,
+  // )
 }
 
 export const headConfig = ({ frontmatter, site }) => {
