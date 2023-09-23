@@ -1,7 +1,6 @@
 // import {createHead} from '@vueuse/head'
 
 import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
-
 import type { Script } from '@unhead/schema'
 type TurboScript = Script & { once: true }
 
@@ -11,7 +10,7 @@ const link: any = [
   {
     rel: 'icon',
     type: 'image/x-icon',
-    href: '/favicon.ico',
+    href: '/favicon.svg',
   },
 ]
 const noscript: any = []

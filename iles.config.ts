@@ -7,9 +7,11 @@ import presetIcons from '@unocss/preset-icons'
 import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
+import site from './src/site'
+const { url: siteUrl } = site
 
 export default defineConfig({
-  siteUrl: 'https://pg-iles-tailwindcss.netlify.app',
+  siteUrl,
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
@@ -91,6 +93,15 @@ export default defineConfig({
   // extendRoutes (routes) {
   //   //...
   // },
+  vue: {
+    // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag === 'lite-youtube',
+      },
+    },
+  },
+
   vite: {
     resolve: {
       alias: {
