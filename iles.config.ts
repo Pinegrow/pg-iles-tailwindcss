@@ -1,12 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'iles'
+import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
+import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
-import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
-import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
+
 import site from './src/site'
 const { url: siteUrl } = site
 
@@ -47,6 +48,7 @@ export default defineConfig({
     ],
     //...
   ],
+
   markdown: {
     rehypePlugins: [
       [
@@ -59,6 +61,7 @@ export default defineConfig({
       ],
     ],
   },
+
   // Update config as per your needs
   // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
   components: {
@@ -70,7 +73,7 @@ export default defineConfig({
     // extensions: ['vue', 'jsx', 'tsx', 'js', 'ts', 'mdx', 'svelte'] // already included by iles
 
     // allow auto import and register components used in markdown
-    // include: [/\.vue$/, /\.vue\?vue/, /\.mdx?/] // already included by iles
+    // include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/] // already included by iles
 
     // resolvers: [], // Auto-import using resolvers
 
@@ -78,6 +81,7 @@ export default defineConfig({
 
     dts: 'components.d.ts',
   },
+
   // Update config as per your needs
   // For details, refer to https://iles.pages.dev/guide/plugins#islandspages
 
@@ -93,8 +97,8 @@ export default defineConfig({
   // extendRoutes (routes) {
   //   //...
   // },
+
   vue: {
-    // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
     template: {
       compilerOptions: {
         isCustomElement: (tag) => tag === 'lite-youtube',
@@ -103,17 +107,6 @@ export default defineConfig({
   },
 
   vite: {
-    resolve: {
-      alias: {
-        /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
-        /* Refer to: https://vitejs.dev/config/shared-options.html#resolve-alias */
-        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-        '~': fileURLToPath(new URL('./src', import.meta.url)),
-        '~~': fileURLToPath(new URL('./', import.meta.url)),
-      },
-    },
     plugins: [
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
       AutoImportAPIs({
@@ -151,6 +144,17 @@ export default defineConfig({
       }),
       // VueDevTools(),
     ],
+    resolve: {
+      alias: {
+        /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
+        /* Refer to: https://vitejs.dev/config/shared-options.html#resolve-alias */
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '~': fileURLToPath(new URL('./src', import.meta.url)),
+        '~~': fileURLToPath(new URL('./', import.meta.url)),
+      },
+    },
   },
   //...
 })

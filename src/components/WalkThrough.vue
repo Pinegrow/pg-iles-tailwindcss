@@ -1,5 +1,4 @@
 <script client:load lang="ts">
-  //Move to WalkThrough.vue
   import '@/plugins/youtube.client'
 </script>
 
