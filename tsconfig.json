@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -9,8 +10,6 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
       "~/*": ["src/*"],
