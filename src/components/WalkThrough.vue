@@ -3,6 +3,7 @@
 </script>
 
 <script setup lang="ts">
+  import 'lite-youtube-embed/src/lite-yt-embed.css'
   import vueDesignerLogo from '@/assets/images/vue-designer.svg'
   const showTitle = ref(true)
 </script>
