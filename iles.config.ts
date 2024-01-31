@@ -25,7 +25,7 @@ export default defineConfig({
       {
         liveDesigner: {
           iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-          devtoolsKey: 'devtools', // see app.ts
+          devtoolsKey: 'devtoolsKey', // see app.ts
           /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
           tailwindcss: {
             configPath: 'tailwind.config.ts',
