@@ -42,7 +42,7 @@
   const { title, description, url, author } = siteDefn
 
   const { frontmatter, site } = usePage()
-  const imgUrl = $computed(() => `${site.url}${image}`)
+  const imgUrl = computed(() => `${site.url}${image}`)
 
   useSeoMeta({
     // charset: 'utf-8',
@@ -54,7 +54,7 @@
     ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    ogImage: imgUrl,
+    ogImage: imgUrl.value,
     ogImageAlt: title,
     // og:image:width
     // og:image:height
@@ -67,7 +67,7 @@
     // og: type
     twitterTitle: title,
     twitterDescription: description,
-    twitterImage: imgUrl,
+    twitterImage: imgUrl.value,
     twitterImageAlt: title,
     twitterSite: '@vuedesigner',
     twitterCreator: '@techakayy',

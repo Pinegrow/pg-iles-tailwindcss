@@ -21,26 +21,26 @@
                 <h5 class="font-extrabold mb-0 ml-2">Vue Designer</h5>
               </a>
             </div>
-            <IslandNavBarDesktopMenu
+            <NavBarDesktopMenu
               :navlinks="desktopNavTabs"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
               client:media="screen and (min-width: 640px)"
             />
           </div>
-          <IslandDarkModeSwitch client:load />
+          <DarkModeSwitch client:load />
           <div class="-mr-2 items-center relative">
-            <IslandNavBarMobileMenuButton
+            <NavBarMobileMenuButton
               v-if="mobileNavTabs.length"
               class="hidden sm:block"
               client:load
             />
-            <IslandNavBarMobileMenuButton
+            <NavBarMobileMenuButton
               v-if="navlinks.length"
               class="sm:hidden"
               client:load
             />
-            <IslandNavBarMobileMenu
+            <NavBarMobileMenu
               class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
               :navlinks="mobileNavTabs"
               :current-path="currentPath"
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <IslandNavBarMobileMenu
+      <NavBarMobileMenu
         class="sm:hidden"
         :navlinks="navlinks"
         :current-path="currentPath"
