@@ -13,7 +13,8 @@
         padding-bottom: 1.5rem /* 24px */;
       "
     >
-      <IslandDarkModeSwitch /><span style="margin-left: 0.5rem; /* 8px */"
+      <IslandDarkModeSwitch client:load /><span
+        style="margin-left: 0.5rem; /* 8px */"
         >A Fresh Start!</span
       >
     </div>
