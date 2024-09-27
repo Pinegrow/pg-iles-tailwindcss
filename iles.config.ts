@@ -101,6 +101,7 @@ export default defineConfig({
   // },
 
   vue: {
+    reactivityTransform: false,
     template: {
       compilerOptions: {
         isCustomElement: (tag) => tag === 'lite-youtube',
