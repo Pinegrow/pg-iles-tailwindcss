@@ -3,10 +3,10 @@
   import { useNav } from '@/composables/nav'
 
   const { navlinks, currentPath } = useNav()
-  const desktopNavTabs = computed(() => {
+  const horizontalNavlinks = computed(() => {
     return navlinks.value.slice(0, 2)
   })
-  const mobileNavTabs = computed(() => {
+  const verticalNavlinks = computed(() => {
     return navlinks.value.slice(2, navlinks.value.length)
   })
 </script>
@@ -21,8 +21,8 @@
                 <h5 class="font-extrabold mb-0 ml-2">Vue Designer</h5>
               </a>
             </div>
-            <NavBarDesktopMenu
-              :navlinks="desktopNavTabs"
+            <NavBarHorizontal
+              :navlinks="horizontalNavlinks"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
               client:media="screen and (min-width: 640px)"
@@ -30,26 +30,26 @@
           </div>
           <DarkModeSwitch client:load />
           <div class="-mr-2 items-center relative">
-            <NavBarMobileMenuButton
-              v-if="mobileNavTabs.length"
+            <NavBarHamburger
+              v-if="verticalNavlinks.length"
               class="hidden sm:block"
               client:load
             />
-            <NavBarMobileMenuButton
+            <NavBarHamburger
               v-if="navlinks.length"
               class="sm:hidden"
               client:load
             />
-            <NavBarMobileMenu
+            <NavBarVertical
               class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
-              :navlinks="mobileNavTabs"
+              :navlinks="verticalNavlinks"
               :current-path="currentPath"
               client:media="screen and (min-width: 640px)"
             />
           </div>
         </div>
       </div>
-      <NavBarMobileMenu
+      <NavBarVertical
         class="sm:hidden"
         :navlinks="navlinks"
         :current-path="currentPath"
