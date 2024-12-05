@@ -21,7 +21,7 @@
                 <h5 class="font-extrabold mb-0 ml-2">Vue Designer</h5>
               </a>
             </div>
-            <NavBarHorizontal
+            <NavPrimary
               :navlinks="horizontalNavlinks"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
@@ -40,7 +40,7 @@
               class="sm:hidden"
               client:load
             />
-            <NavBarVertical
+            <NavSecondary
               class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
               :navlinks="verticalNavlinks"
               :current-path="currentPath"
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <NavBarVertical
+      <NavSecondary
         class="sm:hidden"
         :navlinks="navlinks"
         :current-path="currentPath"
