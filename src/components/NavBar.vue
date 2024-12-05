@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import { computed } from 'vue'
-  import { useNav } from '@/composables/nav'
+  import { useNavMenu } from '@/composables/nav-menu'
 
-  const { navlinks, currentPath } = useNav()
+  const { navlinks, currentPath } = useNavMenu()
   const horizontalNavlinks = computed(() => {
     return navlinks.value.slice(0, 2)
   })

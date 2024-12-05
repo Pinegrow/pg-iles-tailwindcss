@@ -1,15 +1,15 @@
 <script setup lang="ts">
-  import { useNavMenu } from '@/composables/nav-menu'
-  const { isNavMenuOpen, openNavMenu } = useNavMenu()
+  import { useMobileMenu } from '@/composables/mobile-menu'
+  const { isMobileMenuOpen, openMobileMenu } = useMobileMenu()
 </script>
 <template>
   <BaseButton
     size="xl"
     :icon="
-      isNavMenuOpen ? 'i-material-symbols-close' : 'i-material-symbols-menu'
+      isMobileMenuOpen ? 'i-material-symbols-close' : 'i-material-symbols-menu'
     "
     class="!py-2 !rounded-lg leading-none"
-    @click="openNavMenu"
+    @click="openMobileMenu"
     ><span class="sr-only">Open main menu</span>
   </BaseButton>
 </template>

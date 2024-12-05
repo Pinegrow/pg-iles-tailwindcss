@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  import { useNavMenu } from '@/composables/nav-menu'
-  import { isCurrentRoute } from '@/composables/nav'
-  const { isNavMenuOpen } = useNavMenu()
+  import { useMobileMenu } from '@/composables/mobile-menu'
+  import { isCurrentRoute } from '@/composables/nav-menu'
+  const { isMobileMenuOpen } = useMobileMenu()
 
   defineProps({
     navlinks: {
       type: Object,
       default() {
-        return []
+        return {}
       },
     },
     currentPath: {
@@ -19,7 +19,7 @@
 <template>
   <div>
     <div
-      v-if="isNavMenuOpen"
+      v-if="isMobileMenuOpen"
       class="sm:min-w-[200px] rounded-lg shadow overflow-hidden bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 px-4 py-5 sm:p-6 z-10"
     >
       <div class="space-y-1">
@@ -31,7 +31,7 @@
           block
           class="!rounded-lg whitespace-nowrap"
           size="md"
-          @click="isNavMenuOpen = !isNavMenuOpen"
+          @click="isMobileMenuOpen = !isMobileMenuOpen"
         >
           <span class="w-full sm:text-center">{{ navlink.text }}</span>
         </BaseButton>
