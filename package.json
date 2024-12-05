@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@vueuse/core": "^11.1.0",
-    "@vueuse/head": "^2.0.0",
     "defu": "^6.1.4",
     "lite-youtube-embed": "^0.3.3",
     "pinia": "^2.2.2",

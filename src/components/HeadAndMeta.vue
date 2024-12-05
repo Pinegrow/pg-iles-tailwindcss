@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  import { useSeoMeta } from 'unhead'
-
   import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
   import type { Script } from '@unhead/schema'
 
@@ -87,7 +85,7 @@
         content: 'width=device-width, initial-scale=1',
       },
       { name: 'author', content: author },
-      { name: 'keywords', content: computed(() => frontmatter.tags) },
+      { name: 'keywords', content: computed(() => frontmatter.tags).value },
     ],
     script: [{ innerHTML: checkDarkTheme, once: true } as TurboScript],
     link,

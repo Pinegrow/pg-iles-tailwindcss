@@ -21,7 +21,7 @@ export const headConfig = ({ frontmatter, site }) => {
         content: 'width=device-width, initial-scale=1',
       },
       { property: 'author', content: site.author },
-      { property: 'keywords', content: computed(() => frontmatter.tags) },
+      { property: 'keywords', content: computed(() => frontmatter.tags).value },
     ],
     script: [{ children: checkDarkTheme, once: true } as TurboScript],
   }
