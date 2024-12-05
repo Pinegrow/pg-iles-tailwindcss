@@ -6,6 +6,8 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 import VueDevTools from 'vite-plugin-vue-devtools'
+import { unheadComposablesImports } from 'unhead'
+
 // import myIlesModule from './src/modules/my-module'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
@@ -101,7 +103,6 @@ export default defineConfig({
   // },
 
   vue: {
-    reactivityTransform: false,
     template: {
       compilerOptions: {
         isCustomElement: (tag) => tag === 'lite-youtube',
@@ -125,7 +126,7 @@ export default defineConfig({
           // 'vue-router',
           // 'vue-i18n',
           // 'vue/macros',
-          '@vueuse/head',
+          unheadComposablesImports[0],
           '@vueuse/core',
           'pinia',
         ],
